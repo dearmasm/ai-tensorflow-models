@@ -1,0 +1,56 @@
+{
+  "entity": {
+    "model_definition": {
+      "definition_href": "https://us-south.ml.cloud.ibm.com/v3/ml_assets/training_definitions/1731843f-e1ac-410c-bfc6-d9f9740846f3",
+      "execution": {
+        "command": "cd \"$(dirname \"$(find . -name \"start.sh\" -maxdepth 2 | head -1)\")\" && chmod 777 ./start.sh && ./start.sh 500",
+        "compute_configuration": {
+          "name": "k80"
+        }
+      },
+      "framework": {
+        "name": "tensorflow",
+        "version": "1.15"
+      },
+      "name": "coke-and-cup-project"
+    },
+    "status": {
+      "current_at": "2020-07-30T00:02:56.485Z",
+      "finished_at": "2020-07-30T00:02:41.482Z",
+      "message": "training--9NCIJ4GR: ",
+      "metrics": [],
+      "running_at": "2020-07-29T23:49:02.521Z",
+      "state": "completed",
+      "submitted_at": "2020-07-29T23:48:50.546Z"
+    },
+    "training_data_reference": {
+      "connection": {
+        "access_key_id": "47c817f0df2a4fde96c6e7065a4e7537",
+        "endpoint_url": "https://s3.private.us.cloud-object-storage.appdomain.cloud",
+        "secret_access_key": "f94e3c24ddf1112b5e32697a2663388e5e51b2ef8049aedd"
+      },
+      "location": {
+        "bucket": "coke-and-cup-project"
+      },
+      "type": "s3"
+    },
+    "training_results_reference": {
+      "connection": {
+        "access_key_id": "47c817f0df2a4fde96c6e7065a4e7537",
+        "endpoint_url": "https://s3.private.us.cloud-object-storage.appdomain.cloud",
+        "secret_access_key": "f94e3c24ddf1112b5e32697a2663388e5e51b2ef8049aedd"
+      },
+      "location": {
+        "bucket": "coke-and-cup-project",
+        "model_location": "training--9NCIJ4GR"
+      },
+      "type": "s3"
+    }
+  },
+  "metadata": {
+    "created_at": "2020-07-29T23:48:48.429Z",
+    "guid": "model-10jm4g69",
+    "modified_at": "2020-07-29T23:48:48.429Z",
+    "url": "/v3/models/model-10jm4g69"
+  }
+}
